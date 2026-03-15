@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+    background-color:#33DCB3;
+}
+h1{
+    color: #3E5C57;
+    background-color: rgba(71, 230, 255, 0.745);
+}
+h2{
+    color:#435C56;  
+    background-color: #27db42d1;  
+}
+ #principal{
+text-align: center;
+background-color: #32cddbae;
+}
+.sub{
+    background-color: #3ab544cf;
+}
