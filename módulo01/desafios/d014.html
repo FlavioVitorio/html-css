@@ -15,8 +15,19 @@
         thead>tr>th{
             border: 1px solid black;
         }
+        thead{
+            background-color: lightgray;
+        }
         th,td{
             border:1px solid black;
+            padding: 10px;
+        }
+        .justy{
+            background-color: lightgray;
+            text-align: justify;
+        }
+        .num{
+            text-align: center;
         }
     </style>
 </head>
@@ -24,47 +35,63 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">disciplinas</th>
-                <th colspan="2">notas</th>
-                <th rowspan="2">média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">disciplinas</th>
+                <th colspan="2" scope="colgroup">notas</th>
+                <th rowspan="2" scope="col">média</th>
             </tr>
             <tr>                
-                <th>nota1</th>
-                <th>nota2</th></tr>
+                <th scope="col">nota1</th>
+                <th scope="col">nota2</th></tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup" >Exatas</th>
                 <td>Matematica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
             </tr>
             <tr>
                 <td>fisica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
             </tr>
             <tr>
                 <td>quimica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
             </tr>
             <tr>
                 <td>biologia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+            </tr>
+                <tr class="justy">
+                    <th colspan="4" scope="row">media de exatas</th>
+                    <td  class="num">0</td>
+                </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>história</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
             </tr>
             <tr>
-                <th colspan="4">media de exatas</th>
-                <td>0</td>
+                <td>geografia</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
             </tr>
-            
         </tbody>
+        <tfoot class="justy">
+            <th colspan="4" scope="row">Média de humanas</th>
+            <td  class="num">0</td>
+        </tfoot>
             
 </body>
 </html>
