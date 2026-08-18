@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*estilo para tudo*/
+*{
+    margin: 0px;
+    padding:0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: rgb(112, 129, 144);
+}
+header>h1{
+    text-align: center;
+}
+menu ul{
+    background-color: rgb(88, 88, 88);
+    list-style-type: none;
+}
+menu li {
+display: inline-block;
+padding: 10px;
+color: rgb(248, 249, 249);
+}
+menu li:hover{
+    background-color: rgb(161, 141, 141) ;
+}
+article{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+
+   
+}
+article h2{
+    padding: 20px;
+    background-color: rgb(137, 154, 158);
+    text-align: center;
+    border-radius: 10px;
+}
+p{
+    padding: 10px;
+    background-color: azure;
+}
